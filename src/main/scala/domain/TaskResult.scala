@@ -1,8 +1,8 @@
-package api
+package domain
 
 import domain.{TaskId, TaskStatus}
 
-case class CreateTaskResponse(
+case class TaskResult(
                        id: TaskId,
                        status: TaskStatus,
                        result: Option[String],

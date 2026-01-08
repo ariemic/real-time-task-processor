@@ -10,6 +10,8 @@ lazy val root = (project in file("."))
     "io.circe" %% "circe-core" % "0.14.1",
     "io.circe" %% "circe-generic" % "0.14.1",
     "io.circe" %% "circe-parser" % "0.14.1",
+    "io.udash" %% "udash-rest" % "0.9.0",
+    "com.softwaremill.sttp.client3" %% "core" % "3.8.13",
     "org.scalatest" %% "scalatest" % "3.2.15" % Test
     )
 

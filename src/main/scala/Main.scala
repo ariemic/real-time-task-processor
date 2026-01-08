@@ -64,4 +64,24 @@ import scala.concurrent.duration.DurationInt
   println(s"Result: $forCompResult")
 
   println("\n=== All examples completed! ===")
+
+  // Test Observable examples
+  println("\n=== Observable Examples ===")
+  examples.ObservableExamples.basicRange()
+  println()
+  examples.ObservableExamples.transformations()
+
+  // For time-based ones, add sleep
+  println("\n=== Interval Example ===")
+  examples.ObservableExamples.intervalExample()
+  Thread.sleep(2000)
+
+  println("\n=== With Task ===")
+  examples.ObservableExamples.withTask()
+  Thread.sleep(3000)
+
+  println("\n=== Buffering ===")
+  examples.ObservableExamples.buffering()
+  Thread.sleep(4000)
+
 }
